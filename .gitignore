@@ -2,6 +2,8 @@
 #  Original  #
 ##############
 
+datastore
+
 # directory structure
 bin/*
 pkg/*
