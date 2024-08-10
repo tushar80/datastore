@@ -1,0 +1,24 @@
+services:
+
+  db:
+    container_name: p-mysql
+    image: mysql
+    restart: always
+    volumes: 
+      - data-volume:./data-volume
+    ports:
+     - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: <DB_Password>
+
+  redis:
+    container_name: p-redis
+    image: redis
+    restart: always
+    ports:
+     - 6379:6379
+
+volumes:
+  data-volume:
+
+
