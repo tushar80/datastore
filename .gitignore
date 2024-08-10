@@ -4,6 +4,7 @@
 
 datastore
 .env
+tmp/
 
 # directory structure
 bin/*
