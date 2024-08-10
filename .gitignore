@@ -3,6 +3,7 @@
 ##############
 
 datastore
+.env
 
 # directory structure
 bin/*
