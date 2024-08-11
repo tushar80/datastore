@@ -7,6 +7,7 @@ import (
 	"github.com/joho/godotenv"
 
 	"github.com/tushar80/datastore/config"
+	"github.com/tushar80/datastore/handlers"
 )
 
 func main() {
@@ -19,6 +20,8 @@ func main() {
 	config.InitRedis()
 
 	r := gin.Default()
+
+	r.POST("/import", handlers.ImportExcel)
 
 	r.Run(":8080")
 }
