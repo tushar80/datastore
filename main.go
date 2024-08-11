@@ -23,6 +23,7 @@ func main() {
 
 	r.POST("/import", handlers.ImportExcel)
 	r.GET("/view", handlers.ViewRecords)
+	r.PUT("/edit/:id", handlers.EditRecord)
 
 	r.Run(":8080")
 }
