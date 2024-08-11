@@ -31,6 +31,7 @@ You can install these dependencies by running `go mod tidy`.
         - 200 OK on successful import
         - 400 Bad Request if the file is not in the correct format
         - 500 Internal Server Error if any other error occurs during processing
+    - **Example**: ![DataStore excel import](examples/import.png)
 2. **View Imported Data**
     - **Endpoint**: GET `/view`
     - **Description**: View the list of imported data.
@@ -38,6 +39,7 @@ You can install these dependencies by running `go mod tidy`.
 otherwise, it is retrieved from MySQL and then cached.
     - **Response**:
         - 200 OK with JSON array of records
+    - **Example**: ![DataStore view records](examples/view.png)
 3. **Edit a Record**
     - **Endpoint**: PUT `/edit/:id`
     - **Description**: Edit a specific record by ID.
@@ -65,3 +67,4 @@ otherwise, it is retrieved from MySQL and then cached.
         - 200 OK on successful update
         - 400 Bad Request if the input data is invalid
         - 404 Not Found if the record with the given ID doesn't exist
+    - **Example**: ![DataStore update record](examples/update.png)
